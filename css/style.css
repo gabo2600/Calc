@@ -1,0 +1,251 @@
+/*SEtup */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo Tammudu 2', cursive;
+    color:var(--c_font);
+
+}
+
+:root{
+    --c_bg:#3b4664;
+    --c_bg_input:#181f32;
+    --c_bg_pad:#252d44;
+    --c_bg_btn:#eae3db;
+    --c_bg_btn_spc1:#647299;
+    --c_bg_btn_spc2:#d13f30;
+
+    --c_sh_btn:#b2a295;
+    --c_sh_btnS1:#414e6e;
+    --c_sh_btnS2:#992315;
+
+
+    --c_font:#feffff;
+    --c_font_btn:#4b4e5d;
+    --c_font_btnS:#FFF;
+
+    --padd_btn_h:2vw;
+    --padd_btn_v:0.5vh;
+
+
+
+}
+
+#calc{
+    display:grid;
+    max-width: 500px;
+    min-width: 200px;
+    grid-template-rows: 2fr 3fr 8fr;
+    padding: 20px;
+    margin-top: 7vh;
+}
+
+h1{
+    display:inline;
+}
+
+body{
+    background-color:var(--c_bg);
+
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+}
+
+/**/
+
+/*Header */
+
+#header{
+    display:flex;
+    justify-content:space-between;
+}
+
+.toggle{
+    grid-column: 2;
+    grid-row: 2;
+    width:40px;
+    background-color:rgba(0,0,0,0);
+    color:rgba(0,0,0,0);
+    padding:0;
+    margin:0;
+    box-shadow: none;
+}
+
+
+
+label{
+    grid-column:2;
+    grid-row: 1;
+}
+
+.toggle_div div{
+    font-size:10px;
+    font-weight:bold;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+#stage{
+    display:flex;
+    background-color:var(--c_bg_pad);
+    width:30px;
+    height:13px;
+    border-radius: 10px;
+    justify-content:start;
+}
+.dot{
+    background-color:var(--c_bg_btn_spc2);
+    width:13px;
+    height:13px;
+    border-radius :10px;
+}
+
+.toggle_div{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10px 13px;
+    display:grid;
+}
+
+
+
+
+.toggle:hover{
+    background-color:rgba(0,0,0,0);
+    color:rgba(0,0,0,0);
+    box-shadow: none;
+}
+/**/
+
+
+
+
+
+
+
+
+/*Input */
+
+input{
+    background: var(--c_bg_input);
+    border-radius: 20px;
+    border:none;
+    padding:10px;
+    max-height: 60px;
+    max-width:450px;
+    font-size:37px;
+    font-weight: bolder;
+}
+
+/**/
+
+
+
+
+
+
+
+
+
+
+/*pad */
+
+#pad{
+    border-radius: 10px;
+    padding:20px;
+    background-color:var(--c_bg_pad);
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+button{
+    background-color:var(--c_bg_btn);
+    color: var(--c_font_btn);
+    margin:3px;
+    font-size:2rem;
+    font-weight: bolder;
+    min-width:4rem;
+    border-radius: 10px;
+    border: none;
+    height: 3.4rem;
+    box-shadow: var(--c_sh_btn) 0 3px; 
+
+}
+
+.spc1{
+    background-color: var(--c_bg_btn_spc1);
+    color:var(--c_font_btnS);
+    box-shadow: var(--c_sh_btnS1) 0 3px; 
+    font-size:15px;
+    margin:3px;
+}
+
+#btRes{
+    grid-column:1;
+    grid-column-end: span 2;
+}
+
+
+.spc2{
+    background-color: var(--c_bg_btn_spc2);
+    color:var(--c_font_btnS);
+    box-shadow: var(--c_sh_btnS2) 0 3px; 
+    font-size:15px;
+    margin:3px;
+    grid-column:3;
+    grid-column-end: span 2;
+
+}
+
+button:hover{
+    background-color:var(--c_sh_btn);
+}
+
+.spc1:hover{
+    background-color: var(--c_sh_btnS1);
+    box-shadow: var(--c_sh_btnS1) 0 1px; 
+}
+
+.spc2:hover{
+    background-color: var(--c_sh_btnS2);
+    box-shadow: var(--c_sh_btnS2) 0 1px; 
+}
+
+
+/**/
+
+
+
+
+
+
+
+/*Responsiveness */
+
+@media (max-width: 500px) {
+    #calc{
+        margin:0;
+        padding:5px;
+    }
+
+    #header,input,#pad{
+        width:95vw;
+    }
+
+    button{
+        width:20%;
+        margin:2px;
+    }
+
+    #pad{
+        padding: 10px;
+    }
+
+}
+
+
+/**/

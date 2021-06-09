@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Calculator app</title>
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div id="calc">
+    <div id="header">
+      <h1>calc</h1>
+
+      <div class="toggle_div">
+        <label> 1 2 3 </label>
+        <div>THEME </div>
+        <button class="toggle" onclick="changeTheme()">
+          <div id="stage">
+            <div class="dot"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <input type="text" id="input">
+
+    <div id="pad">
+
+      <button id="bt7" class="boton">7</button>
+      <button id="bt8" class="boton">8</button>
+      <button id="bt9" class="boton">9</button>
+      <button id="btDel" class="boton spc1">DEL</button>
+
+      <button id="bt4" class="boton">4</button>
+      <button id="bt5" class="boton">5</button>
+      <button id="bt6" class="boton">6</button>
+      <button id="btPlus" class="boton">+</button>
+
+      <button id="bt1" class="boton">1</button>
+      <button id="bt2" class="boton">2</button>
+      <button id="bt3" class="boton">3</button>
+      <button id="btLess" class="boton">-</button>
+
+      <button id="btDot" class="boton">.</button>
+      <button id="bt0" class="boton">0</button>
+      <button id="btDiv" class="boton">/</button>
+      <button id="btTimes" class="boton">x</button>
+
+      <button id="btRes" class="boton spc1">RESET</button>
+      <button id="btEq" class="boton spc2">=</button>
+
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Gabriel Velez</a>.
+    </div>
+
+  </div>
+
+
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
