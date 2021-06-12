@@ -1,4 +1,4 @@
-(()=>{
+
 //*****Calc
 
 //Global vars
@@ -207,6 +207,3 @@ var op = '';
             root.style.setProperty(cssVars[i], colors[theme][i]);
         }
     }
-
-
-})();
